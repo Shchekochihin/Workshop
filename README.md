@@ -1,0 +1,2 @@
+# Workshop
+Django project "Workshop"
