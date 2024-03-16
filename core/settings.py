@@ -37,8 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'workshopapp',
-    'newsapp',
+    'workshopapp.apps.WorkshopappConfig',
+    'newsapp.apps.NewsappConfig',
 ]
 
 MIDDLEWARE = [
