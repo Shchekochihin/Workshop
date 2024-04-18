@@ -3,4 +3,5 @@ from .models import *
 
 
 def index(request):
-    return HttpResponse("Hello")
+    client = Clients.objects.get(id=1)
+    return HttpResponse("Hello {}".format(client.first_name))
