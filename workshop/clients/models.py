@@ -13,3 +13,6 @@ class Clients(models.Model):
     telephone = models.ForeignKey(PhoneNumbers, on_delete=models.SET_NULL, null=True)
     client_location = models.CharField(max_length=100, blank=True)
     description = models.TextField(blank=True)
+
+    def __str__(self):
+        return self.last_name
