@@ -9,6 +9,7 @@ class PhoneNumbers(models.Model):
 class Clients(models.Model):
     first_name = models.CharField(max_length=30)
     last_name = models.CharField(max_length=30, blank=True)
+    slug = models.SlugField(max_length=255, blank=True, default='')
     avatar = models.ImageField(upload_to='clients_avatar', blank=True)
     telephone = models.ForeignKey(PhoneNumbers, on_delete=models.SET_NULL, null=True)
     client_location = models.CharField(max_length=100, blank=True)
