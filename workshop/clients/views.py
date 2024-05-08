@@ -10,7 +10,7 @@ def index(request):
 def client(request, client_id):
     client = get_object_or_404(Clients, pk=client_id)
     data = {
-        'title': client.first_name + ' ' +client.last_name,
+        'title': client.first_name + ' ' + client.last_name,
         'client': client
     }
     return render(request, 'clients/client.html', data)
